@@ -2,14 +2,72 @@
 
 }
 html, body {
+  background-color: #f4f4f4;
   margin: 0;
+  height: 100%;
   padding: 0;
   border: 0;
-    /* height: 100%; */
 }
+
+.home-page {
+    height: 100%;
+}
+
 .menu {
     background-color: #373737;
-    height: 100vh;
-    width: 30vh;
-    
+    padding: 0px 10px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 25vw;    
+}
+
+.menu-item {
+    border-bottom: 2px solid #595959;
+    color: #f4f4f4;
+    display: flex;
+    font-family: 'Cinzel Decorative', cursive;
+    height: calc(100%/ 7);
+    align-items: center;
+}
+
+[data-item]:hover {
+    background-position: 50% 50%;
+}
+
+[data-item="beef"]:hover {
+    background-image: url('../images/beef.jpg');
+    color: #373737;
+}
+
+[data-item]:hover {
+    padding: 0;
+}
+
+[data-item="cake"]:hover {
+    background-image: url('../images/cake.jpg');
+    color: #373737;
+}
+
+[data-item="chicken"]:hover {
+    background-image: url('../images/chicken.jpg');
+    color: #373737;
+}
+
+[data-item="doughnuts"]:hover {
+    background-image: url('../images/doughnuts.jpg');
+    color: #373737;
+}
+
+[data-item="salmon"]:hover {
+    background-image: url('../images/salmon.jpg');
+    color: #373737;
+}
+
+[data-item="soup"]:hover {
+    background-image: url('../images/soup.jpg');
+}
+
+[data-item="taco"]:hover {
+    background-image: url('../images/taco.jpg');
 }
